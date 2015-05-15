@@ -1,0 +1,21 @@
+{% for jobs in job_list %}
+<div>
+    <p>Job position: {{ jobs.job_name }}</p>
+</div>
+{% endfor %}
+
+{% for jobs in job_list %}
+    <div>
+        <p>Job location: {{ jobs.job_location }}</p>
+        <p>{{ post.text|linebreaks }}</p>
+        <p>Start date: {{ jobs.start_date }}</p>
+        <p>{{ post.text|linebreaks }}</p>
+        <p>Contract type: {{ jobs.contract_type }}</p>
+        <p>{{ post.text|linebreaks }}</p>
+        <p>Job description: {{ jobs.job_description }}</p> 
+        <p>{{ post.text|linebreaks }}</p>
+        <p>Requirements: {{ jobs.language_requirements }}</p>
+        <p>{{ post.text|linebreaks }}</p>
+
+    </div>
+{% endfor %}
